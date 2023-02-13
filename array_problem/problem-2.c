@@ -3,13 +3,19 @@
 #include <stdio.h>
 int main()
 {
-    int a, i;
-    int num[6] = {102, 65, -345, 232, 80, 03};
+    int num[6], i;
+    printf("Input 6 number: \n");
+    for (i = 0; i < 6; i++)
+    {
+        scanf("%d", &num[i]);
+    }
 
     int max = num[0];
-    for (i = 1; i < 5; i++)
+
+    for (i = 1; i < 6; i++)
     {
-        if (i < max)
+        if (num[i] > max)
+        // lowest integer is (num[i] < max) , its answer is -345
         {
             max = num[i];
         }

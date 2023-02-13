@@ -19,5 +19,6 @@ void main()
     {
         sum = sum + collectionOfData[i];
     }
-    printf("Total sum is :%d ", sum);
+    printf("Total sum is:%d ", sum);
+    return 0;
 }
