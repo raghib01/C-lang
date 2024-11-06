@@ -1,15 +1,13 @@
-#include <stdio.h>
-void main()
-{
-    int mark;
-    printf("Enter mark: ");
-    scanf("%d", &mark);
-    if (mark >= 33)
-    {
-        printf("you will passed\n");
+#include<stdio.h>
+//1+2+3+4.....+n
+int main(){
+    int i, N, sum = 0;
+    printf("Input N\'th value: ");
+    scanf("%d\n", &N);
+
+    for(i=1; i<=N; i++){
+        sum = sum + i;
     }
-    else
-    {
-        printf("fail in this exam\n");
-    };
+    printf("\nSum is : %d", sum);
+    getch();
 }
